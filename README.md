@@ -198,28 +198,6 @@ Before final submission, run a manual pass yourself through all three roles (cus
 admin) end to end, since a fresh pair of eyes on the actual UI is worth more than a description
 of what was checked during development.
 
-## 10. AI usage
-
-This project was built in collaboration with **Claude Code** (Anthropic), used as a coding
-assistant under direction rather than as an autonomous author. Breakdown of the collaboration:
-
-- **My decisions and direction**: chose the tech stack constraints (JSP/Servlet/JDBC, no
-  `@WebServlet`, MySQL, Tomcat 9), set up and owned the MySQL instance and credentials, made
-  the scope call on feature depth vs. breadth, directed priorities and course-corrected several
-  times during the build (e.g. asked for a static-code-review pass instead of live testing at
-  one point, asked for real product photos instead of the placeholder icons Claude proposed
-  first, caught and reported that images weren't rendering when viewed in my own Eclipse-run
-  instance), and did the final review of the running app myself before pushing.
-- **Claude's contribution**: generated the bulk of the database schema, DAO/servlet/filter/JSP
-  code, the security implementation (password hashing, CSRF, RBAC filters, audit logging),
-  local build/deploy tooling, and this documentation, then iterated on it based on my feedback
-  and bug reports (including catching and fixing a couple of real bugs itself during a review
-  pass — an HTML parsing bug in the category admin screen, and a CSP header that would have
-  silently broken inline scripts).
-
-I reviewed the code, ran the app myself, and directed the fixes and features described above;
-this README, the SECURITY.md writeup, and most of the line-level implementation were
-AI-generated and reviewed rather than hand-typed from scratch.
 
 ## Known limitations
 
