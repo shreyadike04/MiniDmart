@@ -1,0 +1,4 @@
+db.url=jdbc:mysql://localhost:3306/minidmart?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+db.driver=com.mysql.cj.jdbc.Driver
+db.user=minidmart_user
+db.password=CHANGE_ME

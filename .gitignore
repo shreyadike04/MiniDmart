@@ -1,0 +1,10 @@
+build/
+build/classes/
+*.class
+.settings/
+.metadata/
+.claude/
+src/main/resources/db.properties
+*.log
+.DS_Store
+Thumbs.db
