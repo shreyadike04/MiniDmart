@@ -10,6 +10,9 @@ import com.minidmart.util.PasswordUtil;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Map;
+
+import static java.util.Map.entry;
 
 /**
  * One-shot demo data loader: run after schema.sql to populate categories,
@@ -19,6 +22,34 @@ import java.time.LocalTime;
  * Usage: java -cp <classes>;<mysql-connector>;<jstl> com.minidmart.tools.DataSeeder
  */
 public final class DataSeeder {
+
+    /** Real product photos (Wikimedia Commons, stable Special:FilePath links) keyed by SKU. */
+    private static final Map<String, String> IMAGES = Map.ofEntries(
+            entry("FRV-001", "https://commons.wikimedia.org/wiki/Special:FilePath/Bananas.jpg?width=500"),
+            entry("FRV-002", "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato_je.jpg?width=500"),
+            entry("FRV-003", "https://commons.wikimedia.org/wiki/Special:FilePath/Onion_on_White.JPG?width=500"),
+            entry("FRV-004", "https://commons.wikimedia.org/wiki/Special:FilePath/Patates.jpg?width=500"),
+            entry("FRV-005", "https://commons.wikimedia.org/wiki/Special:FilePath/Spinach.jpg?width=500"),
+            entry("FRV-006", "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Apple.jpg?width=500"),
+            entry("DRY-001", "https://commons.wikimedia.org/wiki/Special:FilePath/Milk.jpg?width=500"),
+            entry("DRY-002", "https://commons.wikimedia.org/wiki/Special:FilePath/Yoghurt%20in%20bowl%20011715.jpg?width=500"),
+            entry("DRY-003", "https://commons.wikimedia.org/wiki/Special:FilePath/Homemade%20Paneer%20cottage%20cheese%20cut%20into%20cubes.JPG?width=500"),
+            entry("DRY-004", "https://commons.wikimedia.org/wiki/Special:FilePath/Egg%20cartons%20with%20chicken%20eggs%2003.jpg?width=500"),
+            entry("DRY-005", "https://commons.wikimedia.org/wiki/Special:FilePath/Block%20of%20butter%20in%20butter%20dish.jpg?width=500"),
+            entry("BAK-001", "https://commons.wikimedia.org/wiki/Special:FilePath/Transparent%20Slice%20of%20Sara%20Lee%20white%20whole%20grain%20bread%20in%20the%20Franklin%20Farm%20section%20of%20Oak%20Hill%2C%20Fairfax%20County%2C%20Virginia.png?width=500"),
+            entry("BAK-002", "https://commons.wikimedia.org/wiki/Special:FilePath/Vegan%20no-knead%20whole%20wheat%20bread%20loaf%2C%20sliced%2C%20September%202010.jpg?width=500"),
+            entry("BAK-003", "https://commons.wikimedia.org/wiki/Special:FilePath/Bulkie%20roll%20spicy%20salmon%20burger.jpg?width=500"),
+            entry("BEV-001", "https://commons.wikimedia.org/wiki/Special:FilePath/Orange%20juice%201%20edit1.jpg?width=500"),
+            entry("BEV-002", "https://commons.wikimedia.org/wiki/Special:FilePath/Drink%20%22Favorite%20Cola%22.jpg?width=500"),
+            entry("BEV-003", "https://commons.wikimedia.org/wiki/Special:FilePath/Green%20Tea%20Cup%20with%20Hollandia%20milk.jpg?width=500"),
+            entry("BEV-004", "https://commons.wikimedia.org/wiki/Special:FilePath/Instant%20Coffee%20In%20a%20Glass%20Jar.jpg?width=500"),
+            entry("SNK-001", "https://commons.wikimedia.org/wiki/Special:FilePath/Chips%20in%20a%20bowl%20at%20a%20party.JPG?width=500"),
+            entry("SNK-002", "https://commons.wikimedia.org/wiki/Special:FilePath/Digestive%20biscuits.jpg?width=500"),
+            entry("SNK-003", "https://commons.wikimedia.org/wiki/Special:FilePath/Bombaymix.jpg?width=500"),
+            entry("HHD-001", "https://commons.wikimedia.org/wiki/Special:FilePath/Tesco%20and%20Sainsburys%20own%20dishwashing%20liquid.jpg?width=500"),
+            entry("HHD-002", "https://commons.wikimedia.org/wiki/Special:FilePath/Laundry%20detergent%201.jpg?width=500"),
+            entry("HHD-003", "https://commons.wikimedia.org/wiki/Special:FilePath/Stacked%20rolls%20of%20toilet%20paper%2C%20Tunnicliff's%20Tavern.jpg?width=500")
+    );
 
     public static void main(String[] args) throws Exception {
         UserDao userDao = new UserDao();
@@ -130,6 +161,7 @@ public final class DataSeeder {
         p.setDescription(description);
         p.setUnit(unit);
         p.setPrice(new BigDecimal(price));
+        p.setImageUrl(IMAGES.get(sku));
         p.setStockQty(stockQty);
         p.setReorderLevel(reorderLevel);
         p.setActive(true);
