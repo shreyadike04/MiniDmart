@@ -32,7 +32,7 @@
           <div class="thumb">
             <c:choose>
               <c:when test="${not empty p.imageUrl}"><img src="${fn:escapeXml(p.imageUrl)}" alt="${fn:escapeXml(p.name)}"></c:when>
-              <c:otherwise>🛒</c:otherwise>
+              <c:otherwise><img src="${pageContext.request.contextPath}/assets/images/categories/${p.categoryIconSlug}.svg" alt="${fn:escapeXml(p.name)}"></c:otherwise>
             </c:choose>
           </div>
           <h3>${fn:escapeXml(p.name)}</h3>

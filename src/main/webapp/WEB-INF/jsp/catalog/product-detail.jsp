@@ -8,7 +8,7 @@
     <div class="thumb" style="height:220px;">
       <c:choose>
         <c:when test="${not empty product.imageUrl}"><img src="${fn:escapeXml(product.imageUrl)}" alt="${fn:escapeXml(product.name)}"></c:when>
-        <c:otherwise><span style="font-size:3rem;">🛒</span></c:otherwise>
+        <c:otherwise><img src="${pageContext.request.contextPath}/assets/images/categories/${product.categoryIconSlug}.svg" alt="${fn:escapeXml(product.name)}"></c:otherwise>
       </c:choose>
     </div>
   </div>

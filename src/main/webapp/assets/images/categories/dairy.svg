@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Dairy and eggs">
+  <circle cx="100" cy="100" r="96" fill="#e3f2fd"/>
+  <path d="M78 56h30l6 18h-42z" fill="#90caf9"/>
+  <path d="M72 74h42l4 84a6 6 0 0 1-6 6H74a6 6 0 0 1-6-6z" fill="#ffffff" stroke="#bcd8f5" stroke-width="2"/>
+  <rect x="72" y="108" width="42" height="14" fill="#64b5f6"/>
+  <text x="93" y="120" font-family="Arial, sans-serif" font-size="9" fill="#0d47a1" text-anchor="middle" font-weight="700">MILK</text>
+  <ellipse cx="145" cy="150" rx="16" ry="12" fill="#fff8e1" stroke="#e0c98f" stroke-width="1.5"/>
+  <ellipse cx="140" cy="148" rx="6" ry="5" fill="#f9a825"/>
+</svg>

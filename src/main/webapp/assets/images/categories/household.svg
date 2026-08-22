@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Household">
+  <circle cx="100" cy="100" r="96" fill="#e0f2f1"/>
+  <rect x="80" y="70" width="30" height="86" rx="6" fill="#26a69a"/>
+  <rect x="86" y="52" width="10" height="22" rx="3" fill="#78909c"/>
+  <path d="M96 58l24-14 4 8-22 14z" fill="#78909c"/>
+  <rect x="84" y="90" width="22" height="14" rx="2" fill="#ffffff" opacity="0.85"/>
+  <circle cx="140" cy="120" r="4" fill="#26a69a" opacity="0.5"/>
+  <circle cx="148" cy="108" r="3" fill="#26a69a" opacity="0.5"/>
+  <circle cx="132" cy="104" r="2.5" fill="#26a69a" opacity="0.5"/>
+</svg>

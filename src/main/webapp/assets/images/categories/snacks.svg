@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Snacks">
+  <circle cx="100" cy="100" r="96" fill="#fff8e1"/>
+  <path d="M70 60h60l10 100a8 8 0 0 1-8 8H68a8 8 0 0 1-8-8z" fill="#f9a825"/>
+  <path d="M70 60c4-10 12-16 30-16s26 6 30 16z" fill="#fbc02d"/>
+  <path d="M78 90c14 8 30 8 44 0M76 112c16 9 32 9 48 0M78 134c14 8 30 8 44 0" stroke="#e08e00" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+</svg>

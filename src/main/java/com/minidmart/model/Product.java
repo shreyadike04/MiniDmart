@@ -54,4 +54,23 @@ public class Product {
 
     public boolean isLowStock() { return stockQty <= reorderLevel; }
     public boolean isInStock() { return stockQty > 0; }
+
+    /**
+     * Filename (without extension) of the local category icon under
+     * /assets/images/categories/ to show when the product has no imageUrl of
+     * its own. Falls back to a generic grocery icon for any category name
+     * added later (via admin) that isn't one of the seeded ones.
+     */
+    public String getCategoryIconSlug() {
+        if (categoryName == null) return "grocery";
+        switch (categoryName) {
+            case "Fruits & Vegetables": return "fruits-veg";
+            case "Dairy & Eggs": return "dairy";
+            case "Bakery": return "bakery";
+            case "Beverages": return "beverages";
+            case "Snacks": return "snacks";
+            case "Household": return "household";
+            default: return "grocery";
+        }
+    }
 }
