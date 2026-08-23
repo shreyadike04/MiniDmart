@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Grocery item">
-  <circle cx="100" cy="100" r="96" fill="#2f2420"/>
-  <path d="M60 84h80l-8 66a10 10 0 0 1-10 9H78a10 10 0 0 1-10-9z" fill="#c96a4a"/>
-  <path d="M74 84c0-18 12-30 26-30s26 12 26 30" fill="none" stroke="#f2ece3" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="96" fill="#eaf1fd"/>
+  <path d="M60 84h80l-8 66a10 10 0 0 1-10 9H78a10 10 0 0 1-10-9z" fill="#2563eb"/>
+  <path d="M74 84c0-18 12-30 26-30s26 12 26 30" fill="none" stroke="#1a2130" stroke-width="7" stroke-linecap="round"/>
 </svg>

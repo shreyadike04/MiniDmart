@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Household">
-  <circle cx="100" cy="100" r="96" fill="#2f2420"/>
-  <rect x="80" y="70" width="30" height="86" rx="6" fill="#8fa382"/>
-  <rect x="86" y="52" width="10" height="22" rx="3" fill="#a3968a"/>
-  <path d="M96 58l24-14 4 8-22 14z" fill="#a3968a"/>
-  <rect x="84" y="90" width="22" height="14" rx="2" fill="#f2ece3" opacity="0.85"/>
-  <circle cx="140" cy="120" r="4" fill="#8fa382" opacity="0.6"/>
-  <circle cx="148" cy="108" r="3" fill="#8fa382" opacity="0.6"/>
-  <circle cx="132" cy="104" r="2.5" fill="#8fa382" opacity="0.6"/>
+  <circle cx="100" cy="100" r="96" fill="#eaf1fd"/>
+  <rect x="80" y="70" width="30" height="86" rx="6" fill="#64748b"/>
+  <rect x="86" y="52" width="10" height="22" rx="3" fill="#5b6472"/>
+  <path d="M96 58l24-14 4 8-22 14z" fill="#5b6472"/>
+  <rect x="84" y="90" width="22" height="14" rx="2" fill="#ffffff" opacity="0.9"/>
+  <circle cx="140" cy="120" r="4" fill="#2563eb" opacity="0.5"/>
+  <circle cx="148" cy="108" r="3" fill="#2563eb" opacity="0.5"/>
+  <circle cx="132" cy="104" r="2.5" fill="#2563eb" opacity="0.5"/>
 </svg>
