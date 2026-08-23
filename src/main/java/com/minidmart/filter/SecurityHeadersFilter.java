@@ -19,9 +19,13 @@ public class SecurityHeadersFilter implements Filter {
         // inline onclick="" confirm() dialogs, plus inline style="" attributes.
         // Without it the browser silently drops all of that — a strict nonce-based
         // CSP would be the production-grade fix but is out of scope here.
+        // fonts.googleapis.com/fonts.gstatic.com are allowlisted for the Google
+        // Fonts webfont linked in header.jsp (stylesheet + the actual font file).
         response.setHeader("Content-Security-Policy",
                 "default-src 'self'; img-src 'self' data: https:; "
-                        + "style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'");
+                        + "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+                        + "font-src 'self' https://fonts.gstatic.com; "
+                        + "script-src 'self' 'unsafe-inline'");
         chain.doFilter(req, res);
     }
 }

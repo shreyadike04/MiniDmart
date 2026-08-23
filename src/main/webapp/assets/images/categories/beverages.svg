@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Beverages">
-  <circle cx="100" cy="100" r="96" fill="#fdecea"/>
-  <path d="M84 54h32l-4 20h-24z" fill="#8d6e63"/>
-  <path d="M78 74h44l-6 78a8 8 0 0 1-8 7H92a8 8 0 0 1-8-7z" fill="#ef6c5c"/>
-  <path d="M78 74h44l-2 22H80z" fill="#f4897b"/>
-  <path d="M100 40c-6 8-6 12 0 18 6-6 6-10 0-18z" fill="#5a8f3c"/>
+  <circle cx="100" cy="100" r="96" fill="#2f2420"/>
+  <path d="M84 54h32l-4 20h-24z" fill="#a3968a"/>
+  <path d="M78 74h44l-6 78a8 8 0 0 1-8 7H92a8 8 0 0 1-8-7z" fill="#c96a4a"/>
+  <path d="M78 74h44l-2 22H80z" fill="#e07c5a"/>
+  <path d="M100 40c-6 8-6 12 0 18 6-6 6-10 0-18z" fill="#8fa382"/>
 </svg>

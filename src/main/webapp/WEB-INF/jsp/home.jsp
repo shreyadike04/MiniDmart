@@ -3,10 +3,10 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ include file="/WEB-INF/jsp/common/header.jsp" %>
 
-<div class="card" style="background:linear-gradient(135deg,#2e7d32,#66bb6a);color:#fff;margin-bottom:24px;">
+<div class="card hero">
   <h1 style="margin-top:0;">Fresh groceries. Pick up in-store or get them delivered.</h1>
-  <p style="opacity:.95;max-width:560px;">Browse categories, build your cart, and choose a scheduled store pickup slot or home delivery at checkout.</p>
-  <a class="btn" style="background:#fff;color:#1b5e20;" href="${pageContext.request.contextPath}/products">Start shopping</a>
+  <p>Browse categories, build your cart, and choose a scheduled store pickup slot or home delivery at checkout.</p>
+  <a class="btn btn-primary" href="${pageContext.request.contextPath}/products">Start shopping</a>
 </div>
 
 <c:if test="${not empty categories}">

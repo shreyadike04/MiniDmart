@@ -48,7 +48,7 @@
       </c:when>
       <c:otherwise>
         <c:forEach var="a" items="${addresses}">
-          <div class="card" style="margin-bottom:10px; box-shadow:none; border:1px solid #e5e7eb;">
+          <div class="card" style="margin-bottom:10px; box-shadow:none; border:1px solid var(--border);">
             <div class="flex-between">
               <strong>${fn:escapeXml(a.label)}</strong>
               <c:if test="${a.defaultAddress}"><span class="badge badge-green">Default</span></c:if>
