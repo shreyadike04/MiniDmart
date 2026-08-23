@@ -111,7 +111,10 @@ p { line-height: 1.55; }
 .footer a { color: var(--text-muted); }
 
 /* ---------- Hero (home) ---------- */
-.hero {
+/* .card.hero, not .hero: the hero is <div class="card hero">, and .card is
+   declared later in this file. At equal specificity the later rule wins, so a
+   plain .hero background loses to .card's white surface. */
+.card.hero {
   background: linear-gradient(135deg, #1d4ed8, #2563eb);
   border: 1px solid #1d4ed8;
   color: #ffffff;

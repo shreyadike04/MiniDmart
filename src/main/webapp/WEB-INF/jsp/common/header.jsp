@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <%-- ?v= is a cache-buster: bump it whenever style.css changes so browsers
        fetch the new file instead of serving a stale cached copy. --%>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css?v=3">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css?v=4">
 </head>
 <body>
 <nav class="navbar">
